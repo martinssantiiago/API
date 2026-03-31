@@ -1,6 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/martinssantiiago/API/issues"
   },
-  "homepage": "https://github.com/martinssantiiago/API#readme"
+  "homepage": "https://github.com/martinssantiiago/API#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
