@@ -1,18 +1,24 @@
+/* ' ' */
+
 import express from 'express'
 
- const app = express()
+const app = express()
 
- const users = []
+const users = []
 
- app.post(`/user`, (req, res) => {
-   
-   console.log(req)
-   
-   res.send(`ok`)
- })
+app.post('/usuarios', (req, res) => {
 
- app.get(`/user`, (req, res) => {
-    res.send(`ok,deu bom`)
- })
+    console.log(req)
+
+    res.send('ok post')
+})
+
+const objResponse = [
+    {nome: 'andre', idade:18}
+]
+
+app.get('/usuarios', (req, res) => {
+    res.send(objResponse)
+})
 
 app.listen(3000)
