@@ -9,17 +9,13 @@ const users = []
 
 app.post('/usuarios', (req, res) => {
 
-    console.log(req)
+    users.push(req.body)
 
     res.send('ok post')
 })
 
-const objResponse = [
-    {nome: 'andre', idade:18}
-]
-
 app.get('/usuarios', (req, res) => {
-    res.send(objResponse)
+    res.json(users)
 })
 
 app.listen(3000)
